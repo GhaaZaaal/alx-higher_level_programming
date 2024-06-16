@@ -3,10 +3,9 @@ import sys
 
 
 def safe_print_integer_err(value):
-    int_value = True
     try:
         print("{:d}".format(value))
-    except Exception as e:
-        print("Exception:", e, file=sys.stderr)
-        int_value = False
-        return int_value
+        return True
+    except ValueError as te:
+        print(te, file=sys.stderr)
+        return False
