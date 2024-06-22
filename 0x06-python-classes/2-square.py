@@ -25,4 +25,4 @@ class Square:
         except (TypeError, ValueError) as err:
             print(err)
 
-        self._size = size
+        self._Square__size = size
