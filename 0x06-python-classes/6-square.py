@@ -101,7 +101,10 @@ positive integers"
         if self._Square__size == 0:
             print()
 
-        for i in range(self._Square__size):
+        for i in range(self._Square__size + self._Square__position[1]):
+            if (i + 1) >= self._Square__position[1]:
+                print("", end="\n")
+                continue
             for x in range(rowSize):
                 if self._Square__position:
                     if (x + 1) <= self._Square__position[0]:
