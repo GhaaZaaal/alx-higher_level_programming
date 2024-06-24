@@ -15,6 +15,15 @@ class Square:
             1- size => The Size of Any Side of The Square
         """
         self._Square__size = size
+        if not isinstance(position, tuple) or len(position) != 2:
+            raise TypeError("position must be a tuple of 2 positive integers")
+        elif isinstance(position, tuple):
+            for num in position:
+                if not isinstance(num, int) or num <= 0:
+                    raise TypeError(
+                        "position must be a tuple of 2 \
+positive integers"
+                    )
         self._Square__position = position
 
     @property
@@ -41,8 +50,10 @@ class Square:
         elif isinstance(value, tuple):
             for num in value:
                 if not isinstance(num, int) or num <= 0:
-                    raise TypeError("position must be a tuple of 2 \
-                                    positive integers")
+                    raise TypeError(
+                        "position must be a tuple of 2 \
+                                    positive integers"
+                    )
         else:
             self._Square__position = value
 
@@ -83,7 +94,7 @@ class Square:
         """
         if self._Square__position:
             rowSize = self._Square__size + self._Square__position[0]
-            print("Setting position to:", self._Square__position)
+            # print("Setting position to:", self._Square__position)
         else:
             rowSize = self._Square__size
 
