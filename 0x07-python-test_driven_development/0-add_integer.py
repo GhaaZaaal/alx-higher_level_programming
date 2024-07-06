@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """
 My Module containing the add function
+To add two integers
+with type int
 """
 
 
