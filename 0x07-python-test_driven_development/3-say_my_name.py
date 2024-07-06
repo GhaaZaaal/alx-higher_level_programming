@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ Doc """
 
+
 def say_my_name(first_name, last_name=""):
     """ Doc """
     if first_name is None or not isinstance(first_name, str):
