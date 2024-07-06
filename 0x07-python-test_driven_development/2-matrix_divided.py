@@ -32,7 +32,7 @@ def matrix_divided(matrix, div):
             ):
                 raise TypeError(
                     "matrix must be a matrix \
-                    (list of lists) of integers/floats"
+(list of lists) of integers/floats"
                 )
 
     if div is None or not isinstance(div, (int, float)):
