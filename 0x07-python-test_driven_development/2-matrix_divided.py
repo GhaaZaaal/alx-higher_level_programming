@@ -25,7 +25,11 @@ def matrix_divided(matrix, div):
         if len(largeList) != listInListLen:
             raise TypeError("Each row of the matrix must have the same size")
         for item in largeList:
-            if not isinstance(item, (int, float)) or item == float("inf"):
+            if (
+                item is None
+                or not isinstance(item, (int, float))
+                or item == float("inf")
+            ):
                 raise TypeError(
                     "matrix must be a matrix \
                     (list of lists) of integers/floats"
