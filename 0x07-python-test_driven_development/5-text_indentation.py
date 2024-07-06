@@ -12,6 +12,8 @@ def text_indentation(text):
             print(letter, end="\n\n")
             hola = False
             continue
-        if hola is True and letter == " ":
+        if hola is True:
+            print(letter, end="")
+        elif hola is False and letter != " ":
             print(letter, end="")
         hola = True
