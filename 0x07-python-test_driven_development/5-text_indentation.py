@@ -15,4 +15,3 @@ def text_indentation(text):
         if hola is True:
             print(letter, end="")
         hola = True
-    print()
