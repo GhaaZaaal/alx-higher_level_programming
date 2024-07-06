@@ -9,9 +9,4 @@ def say_my_name(first_name, last_name=""):
     if last_name is None or not isinstance(last_name, str):
         raise TypeError("last_name must be a string")
 
-    if first_name == "" and last_name == "":
-        print("My name is")
-    elif last_name == "":
-        print(f"My name is {first_name}")
-    else:
-        print(f"My name is {first_name} {last_name}")
+    print(f"My name is {first_name} {last_name}")
