@@ -2,7 +2,7 @@
 
 const args = process.argv;
 
-function factorial(number) {
+function factorial (number) {
   if (number < 0) {
     return false;
   } else if (number === 0) {
