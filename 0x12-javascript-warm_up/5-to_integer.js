@@ -1,10 +1,9 @@
 #!/usr/bin/node
 
 const args = process.argv;
-const index = Number(args[2]);
 
-if (index >= 0) {
-	console.log("My number:", index);
+if (Number(args[2])) {
+	console.log("My number:", Number(args[2]));
 } else {
 	console.log("Not a number");
 }
