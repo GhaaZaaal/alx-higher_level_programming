@@ -3,6 +3,9 @@
 const args = process.argv;
 
 function factorial (number) {
+  if (!number) {
+    return 1;
+  }
   if (number < 0) {
     return false;
   } else if (number === 0) {
